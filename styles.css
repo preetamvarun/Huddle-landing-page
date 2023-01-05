@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 *,*:before,*:after{
     margin : 0;
     padding : 0;
     box-sizing : border-box;
+    /* To hide any overflows along the x-axis of the website */
+    overflow-x: hidden;
 }
+
+/* SETTING THE FONT FAMILY */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* DECLARING VARIABLES */
 
 :root{
     --primary-pink : hsl(322, 100%, 66%);
     --white : #fff;
+    --secondary-pink : hsl(321, 100%, 78%);
+    --pale-blue : hsl(207, 100%, 98%);
+    --dark-cyan : hsl(192, 100%, 9%);
 }
+
+/* BUILDING THE HUDDLE PART */
 
 nav{
     display: flex;
@@ -41,6 +59,8 @@ nav h2{
     color : var(--primary-pink);
 }
 
+/* Media queries for the huddle part */
+
 @media (max-width : 300px){
     nav{
         padding : .75rem;
@@ -52,4 +72,65 @@ nav h2{
         margin-right: 0rem;
         padding : 0rem .75rem;
     }
+}
+
+
+/* BUILDING THE COMMUNITY SECTION */
+
+.community{
+    text-align: center;
+    margin-top : 4.5rem;
+}
+
+.community h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.community > p{
+    width: 50%;
+    position: relative;
+    left : 50%;
+    transform: translateX(-50%);
+    margin : 1.5rem 0rem;
+}
+
+.community a{
+    text-decoration: none;
+    padding : .5rem 1.25rem;
+    display: inline-block;
+    border-radius: 2rem;
+    color : var(--white);
+    background-color: var(--primary-pink);
+    margin-top : 1.25rem;
+    margin-bottom : 3rem;
+    transition-property: background-color;
+    transition-duration: 150ms;
+    font-family: 'Poppins', sans-serif;
+    font-size : .9rem;
+}
+
+.community a:hover{
+    background-color: var(--secondary-pink);
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.stats h2{
+    text-align: left;
+    font-size: 3.5rem;
+}
+
+.messages-sent > div, .communities-formed > div{
+    text-align: left;
+    margin-bottom : 1rem;
+}
+
+.stats h5{
+    font-size : 1.05rem;
+    color : var(--dark-cyan);
 }
