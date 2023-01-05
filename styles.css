@@ -1,0 +1,55 @@
+*,*:before,*:after{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+:root{
+    --primary-pink : hsl(322, 100%, 66%);
+    --white : #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding : 1rem;
+    position: relative;
+}
+
+.huddle{
+    display: flex;
+    align-items: center;
+    margin-left : 1rem;
+}
+
+nav h2{
+    margin-left: 1rem;
+}
+
+.free{
+    padding : 0rem 1rem;
+    border-radius : 25px;
+    margin-right : 1rem;
+    display: flex;
+    align-items: center;
+    margin-right : 1rem;
+    border : 1px solid var(--primary-pink);
+}
+
+.free a{
+    text-decoration: none;
+    color : var(--primary-pink);
+}
+
+@media (max-width : 300px){
+    nav{
+        padding : .75rem;
+    }
+    .huddle{
+        margin-left: 0rem;
+    }
+    .free{
+        margin-right: 0rem;
+        padding : 0rem .75rem;
+    }
+}
