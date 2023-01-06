@@ -80,6 +80,7 @@ nav h2{
 .community{
     text-align: center;
     margin-top : 4.5rem;
+    margin-bottom : 3.5rem;
 }
 
 .community h2{
@@ -133,4 +134,160 @@ nav h2{
 .stats h5{
     font-size : 1.05rem;
     color : var(--dark-cyan);
+}
+
+/* WRITING MEDIA QUERIES FOR COMMUNITY SECTION FOR DESKTOPS */
+
+@media (min-width : 769px) and (max-width : 1200px){
+    .community .mockup img{
+        width : 80%;
+    }
+    .community p{
+        width : 60%;
+    }
+}
+
+/* WRITING MEDIA QUERIES FOR COMMUNITY SECTION FOR TABLETS */
+
+@media (min-width : 501px) and (max-width : 768px){
+    .community .mockup img{
+        width : 75%;
+    }
+    .stats h2{
+        font-size : 3rem;
+    }
+    .community > p{
+        width : 65%;
+    }
+}
+
+/* WRITING MEDIA QUERIES FOR COMMUNITY SECTION FOR PHONES */
+
+@media (min-width : 375px) and (max-width : 500px){
+    .community > p{
+        width : 90%;
+    }
+    .community .mockup img{
+        width : 70%;
+    }
+    .stats{
+        flex-direction: column;
+    }
+    .stats h2{
+        text-align: center;
+    }
+    .communities-formed > div, .messages-sent > div{
+        text-align : center;
+    }
+    .messages-sent{
+        margin-top : 2.75rem;
+    }
+}
+
+.above-together{
+    height : 200px;
+    width : 100%;
+    background : url("./images/bg-section-top-desktop-1.svg") no-repeat center center/cover;
+}
+
+.Together{
+    background-color: var(--pale-blue);
+}
+
+.Discuss{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grow{
+    width : 45%;
+    margin-left: 3rem;
+}
+
+.grow h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size : 2.5rem;
+}
+
+.grow p{
+    line-height: 1.75rem;
+}
+
+.people{
+    margin-left: 2rem;
+}
+
+.people img{
+    height : 500px;
+}
+
+/* WRITING MEDIA QUERIES FOR GROW TOGETHER SECTION */
+
+/* FOR DESKTOPS */
+@media (min-width : 769px) and (max-width : 1200px){
+    .people img{
+        width : 90%;
+        height : 450px;
+    }
+}
+
+/* FOR TABLETS */
+@media (min-width : 501px) and (max-width : 768px){
+    .people{
+        margin-left : 1rem;
+    }
+    .people img{
+        width : 80%;
+        height : 400px;
+    }
+}
+
+/* FOR MOBILE DEVICES */
+@media (max-width : 500px){
+    .above-together{
+        background: url('./images/bg-section-top-mobile-1.svg') no-repeat center center/cover;
+        height : 250px;
+    }
+    .Discuss{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .people{
+        margin-left: 0rem;
+        text-align: center;
+    }
+    .people img{
+        width : 70%;
+        height : 350px;
+    }
+    .grow{
+        margin-left: 0rem;
+        width: 100%;
+        text-align: center;
+        margin : 1rem 0rem;
+    }
+    .grow p{
+        max-width : 85%;
+        margin : auto;
+    }
+    .grow h2{
+        font-size : 2rem;
+    }
+}
+
+.below-together{
+    height : 200px;
+    width : 100%;
+    background: url("./images/bg-section-bottom-desktop-2.svg") no-repeat center center/cover;
+}
+
+/* changing below curver for the mobile devices */
+
+@media (max-width : 500px){
+    .below-together{
+        height : 250px;
+        background: url('./images/bg-section-bottom-mobile-2.svg') no-repeat center center/cover;
+    }
 }
