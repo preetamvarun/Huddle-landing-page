@@ -15,7 +15,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-body h2{
+body h2,h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
@@ -201,8 +201,8 @@ nav h2{
 }
 
 .grow{
-    width : 45%;
-    margin-left: 3rem;
+    flex : 1;
+    margin-left: 2rem;
 }
 
 .grow h2{
@@ -214,7 +214,8 @@ nav h2{
 }
 
 .people{
-    margin-left: 2rem;
+    margin-left: 0rem;
+    flex : 1.3;
 }
 
 .people img{
@@ -381,7 +382,117 @@ nav h2{
         transform: translateX(-50%);
     }
     .below-converse{
-        background: url("./images/bg-section-bottom-mobile-2.svg") no-repeat center center/cover;
+        background: url("./images/bg-section-top-desktop-2.svg") no-repeat center center/cover;
     }
-    
+}
+
+
+.Build-Community{
+    text-align: center;
+    padding-bottom : 6rem;
+}
+
+.Build-Community > div h2{
+    margin : 1rem 0rem;
+}
+
+.Build-Community > div a{
+    display: inline-block;
+    text-decoration: none;
+    color : var(--white);
+    background-color: var(--primary-pink);
+    padding : .75rem 2rem;
+    border-radius : 25px;
+    font-weight: 600;
+}
+
+.below-build-community{
+    background: url('./images/bg-footer-top-desktop.svg');
+    background-repeat: repeat-x;
+    height : 155px;
+}
+
+.footer {
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    color : var(--white);
+}
+
+.social-media i{
+    font-size: 1.5rem;
+}
+
+.footer input{
+    padding : .45rem 1.25rem;
+    margin-right : .75rem;
+    width : 50%;
+    border : 5px;
+}
+
+.footer input::placeholder{
+    text-align: left;
+}
+
+.footer button{
+    padding : .6rem 1.65rem;
+    color : var(--white);
+    background-color: var(--primary-pink);
+    border-radius : 5px;
+}
+
+.footer input:focus{
+    outline: none;
+}
+
+.Huddle-Div{
+    margin-left : 3rem;
+}
+
+.Huddle-Div > div{
+    display: flex;
+    align-items: center;
+}
+
+.Huddle-Div > div h1{
+    display: inline-block;
+    margin-left : 0.65rem; 
+    font-size: 3rem;
+}
+
+.huddle-para{
+    width: 65%; 
+    line-height: 1.65rem; 
+    margin: .85rem 0rem;
+}
+
+.phn{
+    padding : .35rem 0rem;
+}
+
+.phn p, .eml p{
+    display: inline-block; 
+    padding-left: .5rem;
+}
+
+.eml{
+    margin-top : .35rem;
+}
+
+.social-media{
+    margin : 1rem 0rem;
+}
+
+.social-media i:nth-child(2){
+    margin: 0rem .45rem;
+}
+
+.News-Letter h1{
+    font-size : 2rem;
+}
+
+.News-Letter > p{
+    width: 65%; 
+    line-height: 1.65rem; 
+    margin: 1rem 0rem;
 }
