@@ -15,6 +15,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+body h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
 /* DECLARING VARIABLES */
 
 :root{
@@ -81,11 +86,6 @@ nav h2{
     text-align: center;
     margin-top : 4.5rem;
     margin-bottom : 3.5rem;
-}
-
-.community h2{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
 }
 
 .community > p{
@@ -163,7 +163,7 @@ nav h2{
 
 /* WRITING MEDIA QUERIES FOR COMMUNITY SECTION FOR PHONES */
 
-@media (min-width : 375px) and (max-width : 500px){
+@media (max-width : 500px){
     .community > p{
         width : 90%;
     }
@@ -206,8 +206,6 @@ nav h2{
 }
 
 .grow h2{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
     font-size : 2.5rem;
 }
 
@@ -294,3 +292,96 @@ nav h2{
 
 /* NOW STYLING FLOWING CONVERSATIONS SECTION */
 
+.flowing-conversations > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex : 1.4;
+}
+
+.table img{
+    height : 450px;
+    margin-right : 2rem;
+}
+
+.converse{
+    flex : 1;
+}
+
+.converse h2{
+    margin-bottom: 1rem;
+}
+
+.converse p{
+    width : 80%;
+    line-height: 1.75rem;
+    font-size : 1.1rem;
+}
+
+.below-converse{
+    height : 200px;
+    width : 100%;
+    background: url("./images/bg-section-top-desktop-1.svg") no-repeat center center/cover;
+}
+
+/* WRITING MEDIA QUERIES FOR THE FLOWING CONVERSATIONS SECTION */
+
+/* FOR DESKTOPS */
+
+@media (min-width : 769px) and (max-width : 1200px){
+    .table {
+        flex : 1.2;
+    }
+    .converse {
+        flex : 1;
+    }
+    .table img{
+        height : 430px;
+    }
+}
+
+/* FOR TABLETS */
+
+@media (min-width : 501px) and (max-width : 768px){
+    .converse p{
+        width : 90%;
+    }
+}
+
+/* FOR MOBILE PHONES */
+
+@media (max-width : 500px){
+    .flowing-conversations > div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .table {
+        flex : 1;
+        margin : 1.2rem 0rem;
+        width : 100%;
+    }
+    .table img{
+        height : 350px;        
+        margin-right : 0rem;
+    }
+    .converse {
+        flex : 1;
+        text-align: center;
+    }
+    .converse p{
+        position: relative;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    .below-converse{
+        background: url("./images/bg-section-bottom-mobile-2.svg") no-repeat center center/cover;
+    }
+    
+}
