@@ -407,9 +407,11 @@ nav h2{
 }
 
 .below-build-community{
-    background: url('./images/bg-footer-top-desktop.svg');
-    background-repeat: repeat-x;
-    height : 155px;
+    background: url('./images/bg-footer-top-desktop.svg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height : 200px;
+    background-color: var(--white);
 }
 
 .footer {
@@ -417,6 +419,7 @@ nav h2{
     display: flex;
     justify-content: center;
     color : var(--white);
+    padding : 3rem 0rem;
 }
 
 .social-media i{
@@ -424,7 +427,7 @@ nav h2{
 }
 
 .footer input{
-    padding : .45rem 1.25rem;
+    padding : .6rem 1.25rem;
     margin-right : .75rem;
     width : 50%;
     border : 5px;
@@ -495,4 +498,51 @@ nav h2{
     width: 65%; 
     line-height: 1.65rem; 
     margin: 1rem 0rem;
+}
+
+
+/* WRITING MEDIA QUERIES FOR DESKTOP */
+
+@media(min-width : 769px) and (max-width : 1200px){
+    .footer{
+        margin-top : -.2rem;
+    }
+}
+
+/* WRITING MEDIA QUERIES FOR TABLETS */
+
+@media (min-width : 541px) and (max-width : 768px){
+    .footer{
+        margin-top : -.2rem;
+    }
+}
+
+/* WRITING MEDIA QUERIES FOR PHONES */
+
+@media (max-width : 540px){
+
+    .below-build-community{
+        position: relative;
+        background-image: url("./images/bg-footer-top-mobile.svg");
+        background-size: 100%;
+        background-position: bottom;
+        background-color: var(--white);
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer button{
+        display: block;
+        margin : .45rem 0rem;
+    }
+    .Huddle-Div{
+        margin-left : 1.75rem;
+        margin-top : 1.5rem;
+    }
+    .News-Letter{
+        margin-left: 1.75rem;
+    }
+    .Huddle-Div .social-media{
+        margin : 1.5rem 0rem;
+    }
 }
